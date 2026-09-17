@@ -13,6 +13,28 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /files
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 103.75.119.126
   port: 2087
   udp: true
@@ -21,14 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +51,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +60,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
