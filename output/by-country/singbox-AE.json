@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "a85d3eb0-c71e-4086-8139-6ac7c9120389",
+      "uuid": "ceaf462e-a9fa-4c4b-94be-f192570465a7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -55,14 +55,21 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+      "server": "bgr.accessgate.link",
+      "server_port": 2443,
+      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "unpkg.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw",
+          "short_id": "b0d8c9a285c70f6f"
         }
       }
     },
