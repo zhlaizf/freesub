@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: ceaf462e-a9fa-4c4b-94be-f192570465a7
+  uuid: beed721d-73b6-47fc-a7b0-cac10e624b98
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -27,7 +27,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
@@ -35,18 +35,16 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: bgr.accessgate.link
-  port: 2443
+  server: 84.235.244.108
+  port: 22573
   udp: true
   type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: edge
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
