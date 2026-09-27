@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.66.40.161",
+      "server": "104.18.14.103",
       "server_port": 443,
-      "uuid": "c47eb7ab-2c2d-44e0-80cc-bb104f89a137",
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "www.terence-tunnel.org",
+        "server_name": "server9.9966338.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,32 +20,47 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tunnel",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "www.terence-tunnel.org"
+          "Host": "server9.9966338.xyz"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "172.66.43.95",
+      "server": "104.19.229.21",
       "server_port": 443,
-      "uuid": "c47eb7ab-2c2d-44e0-80cc-bb104f89a137",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.terence-tunnel.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tunnel",
+        "path": "//assignment",
         "headers": {
-          "Host": "www.terence-tunnel.org"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "104.19.229.21",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "//assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -55,7 +70,8 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ]
     },
     {
@@ -63,7 +79,8 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
