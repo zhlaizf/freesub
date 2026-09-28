@@ -6,23 +6,32 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "micro-svc-44607f.staging-api-dd63ef.workers.dev",
+      "server": "153.76.185.147",
+      "server_port": 3090,
+      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "gerwai1488.vvzzkontaktezzvv.garden",
       "server_port": 443,
-      "uuid": "0439ff62-13b1-4763-aa27-90e4d429366b",
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "micro-svc-44607f.staging-api-dd63ef.workers.dev",
-        "insecure": false,
+        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "micro-svc-44607f-mlm.staging-api-dd63ef.workers.dev"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
+          "short_id": "0c13e8822e7f58aa"
         }
       }
     },
@@ -31,14 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
