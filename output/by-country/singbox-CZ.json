@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.97.7",
-      "server_port": 443,
-      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
+      "server": "153.76.190.41",
+      "server_port": 8443,
+      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
       "tls": {
         "enabled": true,
-        "server_name": "o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/7J5lLqtBnJg9WjVT?ed",
-        "headers": {
-          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
-        }
+        "server_name": "speedtestmark.com",
+        "insecure": true
       }
     },
     {
